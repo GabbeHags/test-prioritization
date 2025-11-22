@@ -2,8 +2,10 @@ use std::collections::HashSet;
 
 use foldhash::fast::RandomState;
 
+#[derive(Debug)]
 pub enum Strategy {
     Word,
+    #[allow(unused)]
     QGrams(usize),
 }
 
@@ -13,7 +15,7 @@ fn jaccard_index_word(str_1: &str, str_2: &str) -> f32 {
 
     set_1.intersection(&set_2).count() as f32 / set_1.union(&set_2).count() as f32
 }
-fn jaccard_index_q_gram(str_1: &str, str_2: &str, q_grams: usize) -> f32 {
+fn jaccard_index_q_gram(_str_1: &str, _str_2: &str, _q_grams: usize) -> f32 {
     todo!()
 }
 
