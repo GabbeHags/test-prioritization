@@ -5,6 +5,7 @@ use std::{
 };
 
 use anyhow::Context;
+use itertools::Itertools;
 
 pub fn get_test_case_file_text_content<P: AsRef<Path>>(path: P) -> anyhow::Result<String> {
     let path = path.as_ref();
@@ -50,9 +51,68 @@ pub fn get_file_paths_from_dir<P: AsRef<Path>>(path: P) -> anyhow::Result<Vec<Pa
     Ok(files)
 }
 
+pub fn get_file_combinations<P: AsRef<Path>>(
+    paths: &[P],
+) -> anyhow::Result<Vec<(PathBuf, PathBuf)>> {
+    anyhow::ensure!(
+        paths.len() >= 2,
+        "Could not create combinations of less than 2 paths"
+    );
+    let combinations = paths
+        .iter()
+        .map(|p| p.as_ref().to_path_buf())
+        .tuple_combinations::<(_, _)>();
+
+    Ok(combinations.collect::<Vec<_>>())
+}
+
 #[cfg(test)]
 mod tests {
-    use crate::{get_file_paths_from_dir, get_test_case_file_text_content};
+    use std::{path::PathBuf, str::FromStr};
+
+    use crate::{get_file_combinations, get_file_paths_from_dir, get_test_case_file_text_content};
+
+    #[test]
+    fn test_get_file_combinations_not_valid_1_files() {
+        let paths = vec![PathBuf::from_str("Mozilla_TCs/TC1.html").unwrap()];
+        assert!(get_file_combinations(&paths).is_err())
+    }
+
+    #[test]
+    fn test_get_file_combinations_valid_2_files() {
+        let paths = vec![
+            PathBuf::from_str("Mozilla_TCs/TC1.html").unwrap(),
+            PathBuf::from_str("Mozilla_TCs/TC2.html").unwrap(),
+        ];
+        let file_combos = get_file_combinations(&paths).unwrap();
+
+        assert_eq!(file_combos.len(), 1)
+    }
+
+    #[test]
+    fn test_get_file_combinations_valid_3_files() {
+        let paths = vec![
+            PathBuf::from_str("Mozilla_TCs/TC1.html").unwrap(),
+            PathBuf::from_str("Mozilla_TCs/TC2.html").unwrap(),
+            PathBuf::from_str("Mozilla_TCs/TC3.html").unwrap(),
+        ];
+        let file_combos = get_file_combinations(&paths).unwrap();
+
+        assert_eq!(file_combos.len(), 3)
+    }
+
+    #[test]
+    fn test_get_file_combinations_valid_4_files() {
+        let paths = vec![
+            PathBuf::from_str("Mozilla_TCs/TC1.html").unwrap(),
+            PathBuf::from_str("Mozilla_TCs/TC2.html").unwrap(),
+            PathBuf::from_str("Mozilla_TCs/TC3.html").unwrap(),
+            PathBuf::from_str("Mozilla_TCs/TC4.html").unwrap(),
+        ];
+        let file_combos = get_file_combinations(&paths).unwrap();
+
+        assert_eq!(file_combos.len(), 6)
+    }
 
     #[test]
     fn test_get_file_paths_from_dir_valid() {

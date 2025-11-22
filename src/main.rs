@@ -1,8 +1,18 @@
+mod jaccard;
+use std::{path::PathBuf, str::FromStr};
+
 use test_prioritization::*;
 
 fn main() -> anyhow::Result<()> {
-    let text_content = get_test_case_file_text_content("Mozilla_TCs/TC1.html").unwrap();
+    let paths = vec![
+        PathBuf::from_str("Mozilla_TCs/TC1.html").unwrap(),
+        PathBuf::from_str("Mozilla_TCs/TC2.html").unwrap(),
+        PathBuf::from_str("Mozilla_TCs/TC3.html").unwrap(),
+        PathBuf::from_str("Mozilla_TCs/TC4.html").unwrap(),
+    ];
+    let file_combos = get_file_combinations(&paths)?;
 
-    println!("{}", text_content);
+    dbg!(file_combos);
+
     Ok(())
 }
