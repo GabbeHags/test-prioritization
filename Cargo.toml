@@ -5,4 +5,6 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0"
+foldhash = "0.2"
 html2text = "0.16"
+itertools = "0.14.0"
