@@ -10,13 +10,14 @@ use std::{
 use anyhow::Context;
 use foldhash::HashMapExt;
 
+use indexmap::IndexMap;
 use test_prioritization::*;
 
 use crate::jaccard::jaccard_index;
 
 fn write_distances_to_csv<P: AsRef<Path>>(
     csv_path: P,
-    distances: &HashMap<(PathBuf, PathBuf), f32, foldhash::fast::RandomState>,
+    distances: &IndexMap<(PathBuf, PathBuf), f32, foldhash::fast::RandomState>,
 ) -> anyhow::Result<()> {
     let csv_path = csv_path.as_ref();
     anyhow::ensure!(
@@ -67,8 +68,8 @@ fn main() -> anyhow::Result<()> {
     let elapsed_time = now.elapsed();
     println!("get_file_combinations took: {}", elapsed_time.as_secs_f32());
 
-    let mut distances: HashMap<(PathBuf, PathBuf), f32, foldhash::fast::RandomState> =
-        foldhash::HashMap::new();
+    let mut distances: IndexMap<(PathBuf, PathBuf), f32, foldhash::fast::RandomState> =
+        IndexMap::with_hasher(foldhash::fast::RandomState::default());
     let mut tc_file_cache: HashMap<PathBuf, anyhow::Result<String>, foldhash::fast::RandomState> =
         foldhash::HashMap::new();
 
