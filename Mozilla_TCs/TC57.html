@@ -1,0 +1,48 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Copy/Paste</a> &gt; <strong>Test Case Description for copy-from-dialog</strong></p> 
+ <h1>Test Case Description for <em>copy-from-dialog</em></h1> 
+ <h2>Purpose</h2> 
+ <p>To determine whether cut/copy/paste works on text fields within dialog boxes and other UI windows.</p> 
+ <h2>Steps/Description</h2> 
+ <ul> 
+  <li>Mac OS 
+   <ol> 
+    <li>With the mouse, select a text string within the browser window, and choose "Copy" from the Edit menu.</li> 
+    <li>From the Edit menu, choose <q>Find on this Page...</q></li> 
+    <li>Press <kbd>Command+V</kbd> to paste the text.</li> 
+    <li>Press <kbd>Command+A</kbd> to select the just-pasted text</li> 
+    <li>Select the first three words of the line:<br> ---&gt; <strong>this very line</strong> &lt;---<br> ...and press <kbd>Command+X</kbd> to cut the text</li> 
+    <li>Press <kbd>Command+A</kbd> to select the remaining text, and choose "Delete" from the Edit menu to clear the text selection.</li> 
+    <li>Repeat steps 1-6, but do so using via control+click context menus, rather than through keyboard shortcuts.</li> 
+    <li>Repeat steps 1-6, but do so using Mozilla's menu bar, rather than keyboard shortcuts. (For bonus points, perform this step via a text field in a modal dialog, such as within Preferences.)</li> 
+   </ol> </li> 
+  <li>Windows 
+   <ol> 
+    <li>With the mouse, select a text string within the browser window, and choose "Copy" from the Edit menu.</li> 
+    <li>From the Edit menu, choose <q>Find on this Page...</q></li> 
+    <li>Press <kbd>Control+V</kbd> to paste the text.</li> 
+    <li>Press <kbd>Control+A</kbd> to select the just-pasted text</li> 
+    <li>Select the first three words of the line:<br> ---&gt; <strong>this very line</strong> &lt;---<br> ...and press <kbd>Control+X</kbd> to cut the text</li> 
+    <li>Press <kbd>Control+A</kbd> to select the remaining text, and choose Delete from the Edit menu to clear the text selection.</li> 
+    <li>Repeat steps 1-6, but do so using via context menus, rather than through keyboard shortcuts.</li> 
+   </ol> </li> 
+  <li>Linux 
+   <ol> 
+    <li>With the mouse, select a text string within the browser window, and choose Copy from the Edit menu.</li> 
+    <li>From the Edit menu, choose <q>Find on this Page...</q></li> 
+    <li>Press <kbd>Alt+V</kbd> to paste the text.</li> 
+    <li>Press <kbd>Alt+A</kbd> to select the just-pasted text</li> 
+    <li>Select the first three words of the line:<br> ---&gt; <strong>this very line</strong> &lt;---<br> ...and press <kbd>Alt+X</kbd> to cut the text</li> 
+    <li>Press <kbd>Alt+A</kbd> to select the remaining text, and click after the right edge of the text selection.</li> 
+    <li>Press the middle mouse button to paste the selected text.</li> 
+    <li>Presss <kbd>Alt+A</kbd> to select the contents of the text field</li> 
+    <li>Choose "Delete" from the Edit menu to clear the text selection.</li> 
+   </ol> </li> 
+ </ul> 
+ <h2>Expected Results</h2> 
+ <ul> 
+  <li> <strong>Mac OS &amp; Windows</strong>: <p>Step 2: The "Find on Page" dialog should appear.<br> Step 3: The copied text "<strong>this very line of text</strong>" should be pasted into the text field.<br> Step 4: The text field contents should now be selected<br> Step 5: The text field should now comprise: " <strong>of text</strong>"<br> Step 6: The text field should now be empty.</p> </li> 
+  <li> <strong>Linux:</strong> <p>Step 2: The "Find on Page" dialog should appear.<br> Step 3: The copied text "<strong>this very line of text</strong>" should be pasted into the text field.<br> Step 4: The text field contents should now be selected<br> Step 5: The text field should now comprise: " <strong>of text</strong>"<br> Step 6: The editing caret should exist to the right of the text " <strong>of text</strong>"<br> Step 7: The text field should now contain " <strong>of text this very line</strong>"<br> Step 8: The text field contents should now be selected<br> Step 9: The text field should now be empty.</p> </li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

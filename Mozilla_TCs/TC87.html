@@ -1,0 +1,24 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="./">Test Case Matrix for Form Manager</a> &gt; <strong>Test Case Description for deleting data from the form manager</strong></p> 
+ <h1>Testcase for <em>deleting data from the form manager</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Verify that if you delete data in the Form Manager, that this data is not shown as an option when prefilling a form.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>You should have no form data saved.</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Go to a site that needs information, for example tripod.com and then click signup</li> 
+  <li>Fill in all the fields on the form</li> 
+  <li>From the Edit menu, select Save Form Info</li> 
+  <li>From the Tools menu, open the Form Manager sub-menu, then choose Edit Form Info</li> 
+  <li>Delete several of the values in the Form Manager (for instance Last: in Name and email in address)</li> 
+  <li>Click Ok</li> 
+  <li>Close the application, start it up and return to this same page</li> 
+  <li>From the Edit menu, select Fill in Form</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>3. A dialog should appear saying data has been captured and the data from this form should be saved to the form manager</p> 
+ <p>4. Form manager should appear and your saved data should be listed</p> 
+ <p>8. Your previously deleted information should not be filled in</p> 
+ <hr class="hide"> 
+</div>

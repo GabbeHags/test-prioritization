@@ -1,0 +1,108 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for cross-platform navigator features</a> &gt; <strong>Test Case Description for local file in current browser</strong></p> 
+ <h1>Test Case Description for <em>local file in current browser</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Test opening local files (both HTML and plain text) in the current Navigator window. Includes tests to dismiss dialog.</p> 
+ <h2>Initial Conditions</h2> 
+ <ol> 
+  <li>Copy <a href="files/boring.html">boring.html</a> and <a href="files/dull.txt">dull.txt</a> into a folder on your machine (eg, your desktop).</li> 
+  <li>Then bring up the Open Web Location dialog in the browser.</li> 
+ </ol> 
+ <table class="data"> 
+  <caption>
+    UI test #1 
+  </caption> 
+  <tbody>
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>Click the <strong>Choose File...</strong> button.</li> 
+      <li>In the resulting file picker dialog, navigate and select the <em>boring.html</em> file.</li> 
+      <li>Click <strong>Open</strong> in the file picker to dismiss it.</li> 
+      <li>Select <strong>Current Navigator window</strong> from the droplist, if it isn't already displayed there.</li> 
+      <li>Click the <strong>Open</strong> button (or hit <kbd>Enter</kbd>).</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td> 
+     <ol> 
+      <li>After step #3, the full path and filename should be displayed in the textfield of the Open Web Location dialog.</li> 
+      <li>After the last step, the Open Web Location dialog should be dismissed, and <em>boring.html</em> displayed in the current browser window.</li> 
+     </ol> </td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <table class="data"> 
+  <caption>
+    Dismissal #1 
+  </caption> 
+  <tbody>
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>Click the <strong>Choose File...</strong> button.</li> 
+      <li>In the resulting file picker dialog, navigate and select the <em>boring.html</em> file.</li> 
+      <li>Click <strong>Open</strong> in the file picker to dismiss it.</li> 
+      <li>Select <strong>Current Navigator window</strong> from the droplist, if it isn't already displayed there.</li> 
+      <li>Click the Cancel button (or hit <kbd>Esc</kbd>).</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td>The dialog should go away and the page in the current browser window remain <em>unchanged</em>.</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <table class="data"> 
+  <caption>
+    UI test #2 
+  </caption> 
+  <tbody>
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>Click the <strong>Choose File...</strong> button.</li> 
+      <li>In the resulting file picker dialog, navigate and select the <em>dull.txt</em> file.</li> 
+      <li>Click <strong>Open</strong> in the file picker to dismiss it.</li> 
+      <li>Select <strong>Current Navigator window</strong> from the droplist, if it isn't already displayed there.</li> 
+      <li>Click the <strong>Open</strong> button (or hit <kbd>Enter</kbd>).</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td> 
+     <ol> 
+      <li>After step #3, the full path and filename should be displayed in the textfield of the Open Web Location dialog.</li> 
+      <li>After the last step, the Open Web Location dialog should be dismissed, and <em>dull.txt</em> displayed in the current browser window.</li> 
+     </ol> </td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <table class="data"> 
+  <caption>
+    Dismissal #2 
+  </caption> 
+  <tbody>
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>Click the <strong>Choose File...</strong> button.</li> 
+      <li>In the resulting file picker dialog, navigate and select the <em>dull.txt</em> file.</li> 
+      <li>Click <strong>Open</strong> in the file picker to dismiss it.</li> 
+      <li>Select <strong>Current Navigator window</strong> from the droplist, if it isn't already displayed there.</li> 
+      <li>Click the Cancel button (or hit <kbd>Esc</kbd>).</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td>The dialog should go away and the page in the current browser window remain <em>unchanged</em>.</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <hr class="hide"> 
+</div>

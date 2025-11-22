@@ -1,0 +1,23 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Drag &amp; Drop</a> &gt; <strong>Test Case Description for dragging invalid items from the desktop</strong></p> 
+ <h1>Test Case Description for <em>dragging invalid items from the desktop</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Confirm that invalid or unusual items dragged to the browser window are handled properly</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>From your desktop or file manager, drag a system or application file to the browser window</li> 
+  <li>Drag to the browser window a printer icon, as well as an shortcut/alias to it. <p>On Windows, this icon would be in the Printers folder of My Computer. On Mac OS, this icon would be on your desktop; should a desktop printer not exist, select it in the Chooser, and press the Create button.</p> </li> 
+  <li>Drag to the browser window the Recycle Bin icon (Trash on Mac OS), as well as an shortcut/alias to it.</li> 
+  <li>Select multiple files on the desktop or in your file manager, and drag these files to the browser window</li> 
+  <li>(Mac OS) Drag an HTML file with a slash (<code>/</code>) in the file name, and a file with a backslash (<code>\</code>) in the file name.</li> 
+  <li>(Mac OS) Drag an HTML file with a hex character sequence such as <code>%3A</code> or <code>%30</code> in the file name (e.g. <code>foo%3Abar baz</code>)</li> 
+  <li>Repeat steps 1-6 for the Location Bar.</li> 
+  <li>Repeat steps 1-6 for the Personal Toolbar</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>1-3. The web browser should reject or ignore the drag&amp;drop or prompt an <q>Unknown Content Type</q> dialog, presenting the user with the option to save the file to disk.</p> 
+ <p>4. Each file dropped onto the browser window should be opened in separate windows or tabs.</p> 
+ <p>5-6. The files should be displayed without error</p> 
+ <p>7-8. All drag&amp;drop operations should be rejected</p> 
+ <hr class="hide"> 
+</div>

@@ -1,0 +1,35 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for show-hide-columns</strong></p> 
+ <h1>Test Case Description for <em>show-hide-columns</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that you can pick which columns you would like to show/hide.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="netscape-bookmarks.html">Netscape Seamonkey Bookmarks</a>, which I use. I have also provided the default <a href="mozilla-bookmarks.html">Mozilla bookmarks</a> file.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select Bookmarks|Manage Bookmarks.</li> 
+  <li>Click the icon on the far right of the column headers.</li> 
+  <li>Uncheck two of the items (columns).</li> 
+  <li>Recheck an item.</li> 
+  <li>Quit and restart the application.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>Step(2) a popup menu should appear listing all of the column headers as menuitems.</li> 
+  <li>Step(3), they should all be checked by default and unchecking should cause that column to disappear from the manage bookmarks window.</li> 
+  <li>Step(4), the columns should reappear upon rechecking its name on the list.</li> 
+  <li>Step(5) the columns should appear just as the did after step(4).</li> 
+ </ol> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="netscape-bookmarks.html">netscape-bookmarks.html</a></li> 
+  <li><a href="mozilla-bookmarks.html">mozilla-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

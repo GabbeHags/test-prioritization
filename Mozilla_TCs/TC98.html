@@ -1,0 +1,26 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for History</a> &gt; <strong>Test Case Description for button-dropdown</strong></p> 
+ <h1>Test Case Description for <em>button-dropdown</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that links are properly added to the global history file.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>Your session history needs to be empty for this test so restart the browser or open a new window. To check, the Back/Forward buttons should be inactive and the dropdowns should not appear at all when the session history is empty.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Follow this <a href="http://home.netscape.com">Netscape</a> link.</li> 
+  <li>Follow this <a href="http://people.netscape.com/claudius">Netscape People</a> link.</li> 
+  <li>Wait for the redirect (15sec).</li> 
+  <li>Follow this <a href="http://www.mozilla.org/quality">Mozilla QA</a> link.</li> 
+  <li>Follow this <a href="http://www.mozilla.org">Mozilla</a> link.</li> 
+  <li>From the "Back" button dropdown select the 4th item from the top "Netscape.com".</li> 
+  <li>From the "Forward" button dropdown select the 3rd item from the top "Mozilla QA Home Page"</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>For Step(6), the dropdown menu should be apparent and active, the 4th item should be "Netscape.com", the page title, and selecting it should actually load that page</li> 
+  <li>For Step(7), the dropdown menu should be apparent and active, the 3rd item should be "Mozilla QA Home Page", the page title, and selecting it should actually load that page.</li> 
+ </ol> 
+ <hr class="hide"> 
+</div>

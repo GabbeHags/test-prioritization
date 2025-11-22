@@ -1,0 +1,27 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Selection</a> &gt; <strong>Test Case Description for drag-select-text</strong></p> 
+ <h1>Test Case Description for <em>drag-select-text</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Determine whether drag-selection of text works, both from dead space, and from within text.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>View the below-linked document.</p> 
+ <h2>Steps/Description</h2> 
+ <p>[from white space to white space, vertically]</p> 
+ <ol> 
+  <li>Move the mouse pointer to the white space above "Hi!".</li> 
+  <li>Click and hold the mouse button, drag to the white space below the first line of text, and release the mouse pointer</li> 
+  <li>Clear the selection (e.g. click anywhere else within the document)<br> <br> [from white space to white space, horizontally]</li> 
+  <li>Move the mouse pointer to the immediate left of the word "Hi!"</li> 
+  <li>Click and hold the mouse button, drag to the last character on the line, and release the mouse pointer.</li> 
+  <li>Clear the selection (e.g. click anywhere else within the document)<br> <br> [from white space to text, with line breaks]</li> 
+  <li>Move the mouse pointer to the immediate left of the word "another" (in the second line of text)</li> 
+  <li>Click and hold the mouse button, dragging to the last character of the word "final" (in the 3rd line), and release the mouse pointer.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>After step #2, the first line of text should be selected in its entirety.</p> 
+ <p>After step #4, the first line of text should (again) be selected in its entirety.</p> 
+ <p>After step #8, the middle of the second line (beginning with the entire word "another") should be selected, through the middle of the third line (ending with the entire word "final".)</p> 
+ <h2>Link</h2> 
+ <p><a href="drag-select-text.html">drag-select-text.html</a></p> 
+ <hr class="hide"> 
+</div>

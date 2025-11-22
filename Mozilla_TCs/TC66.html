@@ -1,0 +1,23 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Drag &amp; Drop</a> &gt; <strong>Test Case Description for dragging into a frame-set page</strong></p> 
+ <h1>Test Case Description for <em>dragging into a frame-set page</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Verify that dragging a link or image to a frame-set page properly replaces the entire window contents, and that dragging from within a frame-set page properly replaces the target frame.</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Open the <code class="filename"><a href="frame-test.html">frame-test.html</a></code> test file</li> 
+  <li>Drag the Drag Me link to the left frame</li> 
+  <li>Drag the space shuttle image to the left frame</li> 
+  <li>In a new browser window, open the <code class="filename"><a href="page-test.html">page-test.html</a></code> test file</li> 
+  <li>From the single-page (<code class="filename">page-test.html</code>) window, drag the Drag Me link to a frame in the frame-set (<code class="filename">frame-test.html</code>) window</li> 
+  <li>Press the Back button in the frame-set window</li> 
+  <li>From the single-page window, drag the space shuttle image to a frame in the frame-set window</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>2. The <code class="filename">dragme.html</code> page should open in the target frame (bug <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=83963">83963</a>)</p> 
+ <p>3. The space shuttle image should open in the target frame (bug <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=83963">83963</a>)</p> 
+ <p>5. The <code class="filename">dragme.html</code> page should replace the frame-set page</p> 
+ <p>7. The space shuttle image should replace the frame-set page</p> 
+ <p class="note">need iframe test cases</p> 
+ <hr class="hide"> 
+</div>

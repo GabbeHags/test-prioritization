@@ -1,0 +1,28 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for surf-bookmark</strong></p> 
+ <h1>Test Case Description for <em>surf-bookmark</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that the fundamental bookmark function is in place, i.e. clicking on a bookmark takes you to that page.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="default-bookmarks.html">Netscape Seamonkey Bookmarks</a>.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select the toplevel "Bookmarks" menu. Select any bookmark on the list.</li> 
+  <li>Click "Bookmarks" on the Bookmarks/personal toolbar. Select any bookmark on the list.</li> 
+  <li>Open the sidebar; click on the "Bookmarks" panel. Double-click any bookmark on the list.</li> 
+  <li>From the toplevel "Bookmarks" menu select "Manage Bookmarks". Double-click any bookmark in the window.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>In all cases, the url corresponding to the bookmark you selected should be loaded in the browser window.</p> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="default-bookmarks.html">default-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

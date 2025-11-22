@@ -1,0 +1,32 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for add-delete-ptoolbar-bookmark</strong></p> 
+ <h1>Test Case Description for <em>add-delete-ptoolbar-bookmark</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that bookmarks are added and deleted from the personal toolbar properly.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="default-bookmarks.html">Netscape Seamonkey Bookmarks</a>.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Open the Manage Bookmarks Window.</li> 
+  <li>Edit|Cut or Edit|Copy any bookmark.</li> 
+  <li>Select the 'Personal Toolbar Folder'. Double-click it or single-click the triangle to open the folder.</li> 
+  <li>Select Edit|Paste.</li> 
+  <li>Go to a browser window and click once on the new link in the personal toolbar.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>The bookmark you added should appear immediately on the personal toolbar in a browser window and be activated by a single click.</li> 
+  <li>It should also be present as a subitem under "Personal Toolbar Folder" in the toplevel Bookmarks menu, in the bookmarks popup within the personal toolbar itself, and in the bookmarks sidepanel.</li> 
+ </ol> 
+ <h2>Link(s)</h2> 
+ <ul> 
+  <li><a href="default-bookmarks.html">default-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

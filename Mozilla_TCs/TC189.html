@@ -1,0 +1,27 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Selection</a> &gt; <strong>Test Case Description for drag-scroll-text</strong></p> 
+ <h1>Test Case Description for <em>drag-scroll-text</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Determine whether drag-scrolling gestures function properly.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>None.</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>View the attached <a href="drag-scroll-text.html">drag-scroll-text.html</a> test case</li> 
+  <li>If necessary, shrink the window so that the browser window contains both horizontal and vertical scroll bars.</li> 
+  <li>Start from the first word ("Currently") in the upper-left hand corner of the web page, and drag-scroll to the bottom-right hand corner of the page.</li> 
+  <li>From the final word ("component") in the document, drag-scroll from the lower-right hand corner of the web to the upper-left hand corner of the web page.</li> 
+  <li>View the <a href="drag-scroll-text-frame.html">drag-scroll-text-frame.html</a> test case.</li> 
+  <li>For each the page's two frames, drag-scroll from the top of the page to its bottom.</li> 
+  <li>View the <a href="drag-scroll-box.html">drag-scroll-box.html</a> test case.</li> 
+  <li>Starting from the first word in the upper-left hand corner of the text area, drag-scroll downwards to the end of the text content.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>After Step #3, the page should be successfully drag-scrolled to the bottom-right hand corner. (despite having to drag-scroll through several table cells, and out of the table)</p> 
+ <p>After Step #4, the document should be successfully drag-scrolled to its upper-left hand corner.</p> 
+ <p>After Step #6, drag-scrolling a frame should not impact the contents of its neighbor frame.</p> 
+ <p>After Step #8, the entire text area should be selected.</p> 
+ <h2>Links</h2> 
+ <p><a href="drag-scroll-text.html">drag-scroll-text.html</a><br> <a href="drag-scroll-text-frame.html">drag-scroll-text-frame.html</a><br> <a href="drag-scroll-box.html">drag-scroll-box.html</a></p> 
+ <hr class="hide"> 
+</div>

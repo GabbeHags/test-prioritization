@@ -1,0 +1,100 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for cross-platform navigator features</a> &gt; <strong>Test Case Description for basic UI &amp; dismissal</strong></p> 
+ <h1>Test Case Description for <em>basic UI &amp; dismissal</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Basic UI &amp; dismissal tests for the Open Web Location dialog.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>The Open Web Location dialog should already be opened in the browser.</p> 
+ <table class="data"> 
+  <caption>
+    UI test #1 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th>Steps/Description and Expected Results</th> 
+    <td> <p>Don't enter anything into the textfield. It should appear similar to <a href="../../../testplans/browser-xpapps/img/open-web-location.png">this image</a>. Verify that these UI elements are present:</p> 
+     <ul> 
+      <li>A text field where you could enter the URL.</li> 
+      <li>A <strong>Choose File</strong>... button next to the textfield.</li> 
+      <li>A droplist whose current selection is <strong>Current Navigator window</strong> .</li> 
+      <li>An <strong>Open</strong> button which is greyed-out.</li> 
+      <li>A <strong>Cancel</strong> button which is active.</li> 
+     </ul> </td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <table class="data"> 
+  <caption>
+    UI test #2 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th>Steps/Description and Expected Results</th> 
+    <td>Enter <strong>http://www.mozillazine.org/</strong> into the textfield. It should appear the same as in UI test #1, except that the <strong>Open</strong> button is now active.</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <table class="data"> 
+  <caption>
+    UI test #3 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>Click the droplist to expand it and view all the choices.</li> 
+      <li>Click the droplist again to collapse it.</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td> <p>When expanded, you see three choices in this order:</p> 
+     <ul> 
+      <li>Current Navigator window</li> 
+      <li>New Navigator window</li> 
+      <li>New Composer window</li> 
+     </ul> <p>After clicking the droplist a second time, it should display only one of the choices.</p> </td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <table class="data"> 
+  <caption>
+    Dismissal test #1 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>Make sure the textfield is empty.</li> 
+      <li>Click the Cancel button.</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td>The dialog should be dismissed (and no change occurring in the current browser window) at step #2.</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <table class="data"> 
+  <caption>
+    Dismissal test #2 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>Make sure the textfield is empty.</li> 
+      <li>Hit the Escape key.</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td>The dialog should be dismissed (and no change occurring in the current browser window) at step #2.</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <hr class="hide"> 
+</div>

@@ -1,0 +1,39 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for delete-folder</strong></p> 
+ <h1>Test Case Description for <em>delete-folder</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that folders are properly deleted.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="netscape-bookmarks.html">Netscape Seamonkey Bookmarks</a>, which I use. I have also provided the default <a href="mozilla-bookmarks.html">Mozilla bookmarks</a> file.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select Bookmarks|Manage Bookmarks.</li> 
+  <li>Select any folder.</li> 
+  <li>Select from the following choices: 
+   <ol style="list-style-type: lower-alpha;"> 
+    <li>Select Edit|Delete. Click OK.</li> 
+    <li>Hit the Backspace key.</li> 
+    <li>Hit the Delete key</li> 
+   </ol> </li> 
+  <li>Select 2 or many folders, repeat step (3).</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>In step (3a) a confirmation dialog should appear, allowing you to cancel the delete operation.</li> 
+  <li>In steps (3b) and (3c), or after clicking "OK" in (3a), the folder should be immediately deleted.</li> 
+  <li>In step (4) you should only be presented with one confirmation dialog, clicking "OK" should result in all selected folders being deleted.</li> 
+  <li>Folders should immediately disappear (be deleted) from the toplevel bookmarks menu, the bookmarks popup on the personal toolbar, the bookmarks sidepanel, and the manage bookmarks window.</li> 
+ </ol> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="netscape-bookmarks.html">netscape-bookmarks.html</a></li> 
+  <li><a href="mozilla-bookmarks.html">mozilla-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

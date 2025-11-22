@@ -1,0 +1,23 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for History</a> &gt; <strong>Test Case Description for anchor history</strong></p> 
+ <h1>Test Case Description for <em>anchor history</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This testcase is designed to verify that anchored links are properly added to the global history file.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>Make the window short enough so that you can only see the Steps/Description portion of this document.</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Click on this anchor link to the <a href="#Purpose">purpose</a>.</li> 
+  <li>Click on this anchor link to the <a href="#Steps">steps</a>.</li> 
+  <li>Click on this anchor link to the <a href="#Links">links</a>.</li> 
+  <li>Click "Back" three times. Click forward three times.</li> 
+  <li>Select Go|History.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>You'll see the view scroll as you follow each link, the url should be updated with the #&lt;anchorname&gt; appended to the url.</li> 
+  <li>Step(4) should load the pages in this order; #steps, #purpose, main page, #pupose, #steps, #links.</li> 
+  <li>The Global History window should list each named anchor as a separate entry.</li> 
+ </ol> 
+ <hr class="hide"> 
+</div>

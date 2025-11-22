@@ -1,0 +1,35 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for copy-paste-items</strong></p> 
+ <h1>Test Case Description for <em>copy-paste-items</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that copy and paste function properly.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="netscape-bookmarks.html">Netscape Seamonkey Bookmarks</a>, which I use. I have also provided the default <a href="mozilla-bookmarks.html">Mozilla bookmarks</a> file.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select Bookmarks|Manage Bookmarks.</li> 
+  <li>Select any item.</li> 
+  <li>Select Edit|Copy.</li> 
+  <li>Select any item.</li> 
+  <li>Select Edit|Paste.</li> 
+  <li>Cycle through the 3 possible choices in each of step(2) and step(4). There are nine permutations.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>Every item should be copyable(bookmark, folder, separator).</li> 
+  <li>The copied item should be pasted below the selected item in each case.</li> 
+  <li>For each paste the newly pasted items should appear in the 4 standard locations.</li> 
+ </ol> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="netscape-bookmarks.html">netscape-bookmarks.html</a></li> 
+  <li><a href="mozilla-bookmarks.html">mozilla-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

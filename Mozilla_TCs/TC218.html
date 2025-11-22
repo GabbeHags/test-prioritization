@@ -1,0 +1,25 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="./">Test Case Matrix for Toolbars and Windows Controls</a> &gt; <strong>Test case for adding folder to personal toolbar</strong></p> 
+ <h1>Test Case for <em>adding folder to personal toolbar</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that folders can be added to the personal toolbar and their contents will still function as links.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>All of the browser's toolbars(3) must be visible.</li> 
+  <li>Make sure they are all visible by selecting the top level "View" menu and looking at the Toolbars submenu. The Navigation Toolbar, Personal Toolbar, and Taskbar should all have checks next to their names.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select Bookmarks|Manage Bookmarks.</li> 
+  <li>Open the "Personal Toolbar Folder". Add a new folder to it, File|New Folder.</li> 
+  <li>Open and add a new bookmark, File|New Bookmark to the folder you just created.</li> 
+  <li>Select the new bookmark and edit its properties, Edit|Bookmark Properties, changing the url to http://www.mozilla.org.</li> 
+  <li>Go back to the browser window and click on the New Folder in the personal toolbar. Click the New Bookmark item.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>The New Folder should appear in the personal toolbar.</li> 
+  <li>The link within the New Folder on the personal toolbar should function normally.</li> 
+ </ol> 
+ <hr class="hide"> 
+</div>

@@ -1,0 +1,29 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Copy/Paste</a> &gt; <strong>Test Case Description for copy-text-indented</strong></p> 
+ <h1>Test Case Description for <em>copy-text-indented</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Determine whether text copied from a formatted web page (such as within a table) has a "non-annoying" layout.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>Launch a text editing program (e.g. SimpleText on Mac OS or WordPad on Windows)</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>View the attached link</li> 
+  <li>Select the entire content of the left-hand column (beginning with "The Mozilla Organization") and select "Copy" from the Edit menu.</li> 
+  <li>View the contents of the Clipboard.</li> 
+  <li>Select the entire content of the right-hand column (beginning with "Status Update"), and select "Copy" from the Edit menu.</li> 
+  <li>View the contents of the Clipboard.</li> 
+  <li>Select both columns together --- and the Copyright statement at the bottom of the page --- and select "Copy" from the Edit menu.</li> 
+  <li>View the contents of the Clipboard.<br> ---<br><br> To view the system Clipboard:<br> <strong>Mac OS:</strong> Select "Show Clipboard" from the Finder.<br> <strong>Windows:</strong> Select "Clipboard Viewer" from the Accessories subgroup of the Programs group.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>In all three scenarios, the text should be copied and displayed in the clipboard with "non-annoying" formatting:</p> 
+ <ul> 
+  <li>line breaks (&lt;BR&gt;) should be honored</li> 
+  <li>table indentation should not affect the leftward position of the text</li> 
+  <li>The leftmost column should be presented first in the clipboard, followed by the rightmost column and copyright statement.</li> 
+ </ul> 
+ <p>(Otherwise, please use your best judgment; Internet Explorer 4.x+ is a good reference for a non-annoying implementation.)</p> 
+ <h2>Link(s)</h2> 
+ <p><a href="copy-text-indented.html">copy-text-indented</a></p> 
+ <hr class="hide"> 
+</div>

@@ -1,0 +1,38 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for paste-into-folder</strong></p> 
+ <h1>Test Case Description for <em>paste-into-folder</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that pasting into containers works properly.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="netscape-bookmarks.html">Netscape Seamonkey Bookmarks</a>, which I use. I have also provided the default <a href="mozilla-bookmarks.html">Mozilla bookmarks</a> file.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select Bookmarks|Manage Bookmarks.</li> 
+  <li>Select any item.</li> 
+  <li>Select Edit|Copy.</li> 
+  <li>Select any closed folder.</li> 
+  <li>Select Edit|Paste.</li> 
+  <li>Select any open folder (open a folder).</li> 
+  <li>Select Edit|Paste</li> 
+  <li>Repeat steps(2-7) using the same folder for step(2), step(4) and step(6) ie paste a folder into itself.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>All items should paste below a closed folder.</li> 
+  <li>All items except the identical folder should paste into an open folder.</li> 
+  <li>Pasting a folder into itself should not be allowed (*Communicator 4.x allows this).</li> 
+  <li>Newly pasted items should appear in the 4 standard locations.</li> 
+ </ol> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="netscape-bookmarks.html">netscape-bookmarks.html</a></li> 
+  <li><a href="mozilla-bookmarks.html">mozilla-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

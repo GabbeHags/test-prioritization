@@ -1,0 +1,31 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for History</a> &gt; <strong>Test Case Description for go menu list</strong></p> 
+ <h1>Test Case Description for <em>go menu list</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that links are properly added to the session history and displayed in the browser's Go menu.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>Your session history needs to be empty for this test so restart the browser or open a new window. To check, the "Go" menu should list no sites when the session history is empty.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Follow this <a href="http://home.netscape.com">Netscape</a> link.</li> 
+  <li>Follow this <a href="http://people.netscape.com/claudius">Netscape People</a> link.</li> 
+  <li>Wait for the redirect (15sec).</li> 
+  <li>Follow this <a href="http://www.mozilla.org/quality">Mozilla QA</a> link.</li> 
+  <li>Follow this <a href="http://www.mozilla.org/">Mozilla</a> link.</li> 
+  <li>Click the browser "Back" button in the other window.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>Expected result by step:</p> 
+ <ol> 
+  <li>The Go menu should list the title of this page, "Netcenter".</li> 
+  <li>The Go menu should list "Netcenter" and "How Claudius Got His Groove Back".</li> 
+  <li>The Go menu should list "Netcenter", "How Claudius Got His Groove Back" and "CMaximus' Marquee".</li> 
+  <li>The Go menu should list "Netcenter", "How Claudius Got His Groove Back", "CMaximus' Marquee", and "Mozilla QA Home Page".</li> 
+  <li>The Go menu should list "Netcenter", "How Claudius Got His Groove Back", "CMaximus' Marquee", "Mozilla QA Home Page", and "Mozilla.org".</li> 
+  <li>The Go menu should look the same as in step(5), with the same order.</li> 
+  <li>In each case ,the page you are currently visiting should be checked off on the list in the Go menu.</li> 
+ </ol> 
+ <hr class="hide"> 
+</div>

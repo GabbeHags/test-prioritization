@@ -1,0 +1,34 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for self-drop</strong></p> 
+ <h1>Test Case Description for <em>self-drop</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that bookmarks and folders can't be dropped onto themselves, an immediate parent container or any child container.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="netscape-bookmarks.html">Netscape Seamonkey Bookmarks</a>, which I use. I have also provided the default <a href="mozilla-bookmarks.html">Mozilla bookmarks</a> file.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+  <li>As part of your bookmarks file you need a folder (lets' call it folder "A") that contains bookmarks and another folder (let's call this folder "A<sub>1</sub>" (read Asub1)) that contains bookmarks as well.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select Bookmarks|Manage Bookmarks.</li> 
+  <li>Select folder A<sub>1</sub> then drag&amp;drop it onto or within itself</li> 
+  <li>Select folder A<sub>1</sub> then drag&amp;drop it onto or within folder A.</li> 
+  <li>Select folder A then drag&amp;drop it onto or within folder A<sub>1</sub>.</li> 
+  <li>Select a bookmark within folder A<sub>1</sub> and drop it onto folder A<sub>1</sub>.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>Nothing should happen! No bookmark or folder should be moved in any of these cases. Ideally, one should see the International symbol for "No" cursor.</li> 
+ </ol> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="netscape-bookmarks.html">netscape-bookmarks.html</a></li> 
+  <li><a href="mozilla-bookmarks.html">mozilla-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+  <li><a href="bmmatrix.html">The Bookmarks Testcase Matrix</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

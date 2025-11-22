@@ -1,0 +1,23 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for cross-platform navigator features</a> &gt; <strong>Test Case Description for nonexistent URL</strong></p> 
+ <h1>Test Case Description for <em>nonexistent URL</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Test opening a nonexistent (bogus) web location (URL).</p> 
+ <h2>Initial Conditions</h2> 
+ <p>The Open Web Location dialog should already be opened in the browser.</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>In the textfield enter the URL <strong>http://www.mozilla.org/lizard-eats-all/blarg.html</strong>.</li> 
+  <li>Select <strong>Current Navigator window</strong> from the droplist, if it isn't already displayed there.</li> 
+  <li>Click the <strong>Open</strong> button (or hit <kbd>Enter</kbd>).</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>The dialog should go away.</li> 
+  <li>Since this page doesn't exist (well, it <em>shouldn't</em> ;-), the page that loads should display the typical 404 error: 
+   <blockquote> 
+    <p><strong>Not Found</strong>: The requested object does not exist on this server. The link you followed is either outdated, inaccurate, or the server has been instructed not to let you have it.</p> 
+   </blockquote> </li> 
+ </ol> 
+ <hr class="hide"> 
+</div>

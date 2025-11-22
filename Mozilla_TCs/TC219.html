@@ -1,0 +1,28 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="./">Test Case Matrix for Toolbars and Windows Controls</a> &gt; <strong>Test case for navigation toolbar buttons functionality</strong></p> 
+ <h1>Test Case for <em>navigation toolbar buttons functionality</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that browser navigation toolbar buttons execute appropriately.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>All of the browser's toolbars(3) must be visible.</li> 
+  <li>Make sure they are all visible by selecting the top level "View" menu and looking at the Toolbars submenu. The Navigation Toolbar, Personal Toolbar and Taskbar should all have checks next to their names.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Click <a href="../imaging/img-anim-304/7up.gif">here</a> to load a page with an animated gif. Wait for it to stop.</li> 
+  <li>Click the "Back" button on the Navigation toolbar. It looks like a left-pointing arrow.</li> 
+  <li>Click the "Forward" button on the Navigation toolbar. It looks like a right-pointing arrow. Wait for the gif to stop.</li> 
+  <li>Click the "Reload" button on the Navigation toolbar. It looks like a curved arrow.</li> 
+  <li>Click the "Reload" button again, then quickly click the "Stop" button on the Navigation toolbar. It looks like an "X"</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>While the gif is animating the "Forward" and "Reload" buttons should be inactive and the "Back" and "Stop" buttons should be active. When the gif stops, the "Reload" button should be active and the "Stop" button should be inactive.</li> 
+  <li>You should go back to the page you were at before. The "Forward" button should become active.</li> 
+  <li>The "Forward" button should become inactive again.</li> 
+  <li>The gif should begin to animate again.</li> 
+  <li>The gif should stop mid-animation</li> 
+ </ol> 
+ <hr class="hide"> 
+</div>

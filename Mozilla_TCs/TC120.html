@@ -1,0 +1,24 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Imaging</a> &gt; <strong>Test Case Description for image <a class="ex-ref" href="http://dictionary.com/cgi-bin/dict.pl?term=dithering">dithering</a></strong></p> 
+ <h1>Test Case Description for <em>image <a class="ex-ref" href="http://dictionary.com/cgi-bin/dict.pl?term=dithering">dithering</a></em></h1> 
+ <h2>Purpose</h2> 
+ <p>Confirm that Seamonkey renders images correctly upon a dynamic resolution change.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>System under test should be capable of 8-bit color (256 colors), 16-bit and 24 bit</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Launch Netscape 6</li> 
+  <li>View the test case page (linked below)</li> 
+  <li>Change the system resolution to 8-bit color (256 colors)</li> 
+  <li>Change the system resolution to 16-bit color (65536 colors)</li> 
+  <li>Change the system resolution to 24-bit color (16 million colors)</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>After Step 2, the page should be properly dithered to 8-bit color</p> 
+ <p>After Step 3, the page should be properly dithered to 16-bit color.</p> 
+ <p>After Step 4, the page should be properly rendered in 24-bit color.</p> 
+ <p>(After steps 2, 3 and 4, "proper" rendering or dithering means that the colors should appear as accurate or more accurate than when this test case is viewed in Communicator 4.x or Internet Explorer 5.x.)</p> 
+ <h2>Link</h2> 
+ <p><a href="img_dither.html">img_dither.html</a></p> 
+ <hr class="hide"> 
+</div>

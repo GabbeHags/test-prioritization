@@ -1,0 +1,44 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for sort-columns</strong></p> 
+ <h1>Test Case Description for <em>sort-columns</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that the column sorting feature works properly.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>Install this bookmarks file.(<a href="abcdbookmarks.html">abcdbookmarks.html</a>)</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Select Bookmarks|Manage Bookmarks.</li> 
+  <li>Click on the "Name" column once.</li> 
+  <li>Click on the "Name" column a second time.</li> 
+  <li>Click on the "Name" column a third time.</li> 
+  <li>Click on the "URL" column once, and a second time.</li> 
+  <li>Click on the "Custom Keyword" column once, and a second time.</li> 
+  <li>Click on the "Description" column once, and a second time.</li> 
+  <li>Click on the "Last Visit" column once, and a second time.</li> 
+  <li>Click on the "Added On" column once, and a second time.</li> 
+  <li>Click on the "Last Modified" column once, and a second time.</li> 
+ </ol> 
+ <h2>Expected ResultsBy step</h2> 
+ <ol> 
+  <li>The bookmarks should sort into alphabetical order. (a-b-c-d-e)</li> 
+  <li>The bookmarks should sort into reverse-alphabetical order. (e-d-c-b-a)</li> 
+  <li>The bookmarks should sort into "natural" order (the way they were originally sorted). (a-d-e-b-c)</li> 
+  <li>The bookmarks should sort into order by URL and then the reverse of that order. (d-a-b-c-e)</li> 
+  <li>The bookmarks should sort into order by Custom Keyword and then the reverse of that order. (c-d-a-b-e)</li> 
+  <li>The bookmarks should sort into order by Description and then the reverse of that order. (b-c-d-a-e)</li> 
+  <li>The bookmarks should sort into order by Last Visited time and then the reverse of that order.</li> 
+  <li>The bookmarks should sort into order by Added On date and then the reverse of that order.</li> 
+  <li>The bookmarks should sort into order by Last Modified date and then the reverse of that order.</li> 
+  <li>Separators should separate the sort as well, ie step one should result in a-b-c-d-e|aa-bb-cc-dd-ee, not a-aa-b-bb-c-cc-d-dd-e|.</li> 
+ </ol> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="netscape-bookmarks.html">netscape-bookmarks.html</a></li> 
+  <li><a href="mozilla-bookmarks.html">mozilla-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

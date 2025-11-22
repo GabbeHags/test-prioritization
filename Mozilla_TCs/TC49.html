@@ -1,0 +1,32 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for show-hide-folder</strong></p> 
+ <h1>Test Case Description for <em>show-hide-folder</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that the show/hide behavior for folders is correct.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="netscape-bookmarks.html">Netscape Seamonkey Bookmarks</a>, which I use. I have also provided the default <a href="mozilla-bookmarks.html">Mozilla bookmarks</a> file.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Double-click a closed folder.</li> 
+  <li>Click a closed(points right) disclosure triangle.</li> 
+  <li>Double-click an open folder.</li> 
+  <li>Click an open(points down) disclosure triangle.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>Steps (1) and (2), the folder's contents should be exposed, the folder icon should change to an open folder icon, the disclosure triangle should point down.</li> 
+  <li>Steps (3) and (4), the folder's contents should be concealed, the open folder icon should change to a closed folder icon, the disclosure triangle should point right.</li> 
+ </ol> 
+ <h2>Links</h2> 
+ <ul> 
+  <li><a href="netscape-bookmarks.html">netscape-bookmarks.html</a></li> 
+  <li><a href="mozilla-bookmarks.html">mozilla-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>

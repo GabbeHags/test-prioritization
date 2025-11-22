@@ -1,0 +1,29 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Selection</a> &gt; <strong>Test Case Description for disjoint-select-table</strong></p> 
+ <h1>Test Case Description for <em>disjoint-select-table</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Determine whether discontiguous selection of table cells function properly.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>None.</p> 
+ <h2>Steps/Description</h2> 
+ <p>View the enclosed test case.<br> <strong>Mac OS:</strong></p> 
+ <ol> 
+  <li>Drag-select from (1,1) to (2,2)</li> 
+  <li>Hold down the command key, and click on the 7 (at 4,4)</li> 
+  <li>Hold down the command key, and click on the 4 (at 2,2)</li> 
+ </ol> 
+ <p><strong>Windows:</strong></p> 
+ <ol> 
+  <li>Drag-select from (1,1) to (2,2)</li> 
+  <li>Hold down the Control key, and click on the 7 (at 4,4)</li> 
+  <li>Hold down the Control key, and click on the 4 (at 2,2)</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p><strong>Step 1:</strong><br> The upper-left hand four cells should be selected.</p> 
+ <p><strong>Step 2:</strong><br> The cell containing the number 7 should be selected, in addition to the four cells selected in step a. (A total of five cells should be selected.)</p> 
+ <p><strong>Step 3:</strong><br> On Mac OS, the cell containing the number 4 should be deselected; the other four cells should remain selected. (A total of four cells should be selected.)<br><br> On Windows, the Interface Guidelines lack a useful specification for this action; any user-friendly outcome is acceptable.</p> 
+ <h2>Link</h2> 
+ <p><a href="disjoint-select-table.html">disjoint-select-table.html</a></p> 
+ <p class="important">* What are the Linux keyboard equivalents for performing disjoint cell selections? (No platform UI guidelines)</p> 
+ <hr class="hide"> 
+</div>

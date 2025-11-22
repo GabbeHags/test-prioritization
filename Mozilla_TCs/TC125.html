@@ -1,0 +1,22 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Imaging</a> &gt; <strong>Test Case Description for image reloading (upon image change)</strong></p> 
+ <h1>Test Case Description for <em>image reloading (upon image change)</em></h1> 
+ <h2>Purpose</h2> 
+ <p>To confirm that reloaded web pages properly display images modified since the last load.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>Disk and memory caches to be cleared. Write access to test case directory required.</p> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Copy img-reload.html, foo_master.jpg and bar_master.jpg from the test case directory to your local test case directory.</li> 
+  <li>In your test case directory, copy (but do not rename!) foo_master.jpg to foo.jpg</li> 
+  <li>View img_reload.html.</li> 
+  <li>In the test case directory, copy (but do not rename!) bar_master.jpg to foo.jpg</li> 
+  <li>Hold the shift button down, and press the browser's Reload button</li> 
+ </ol> 
+ <h2>Expected Results:</h2> 
+ <p>After Step 2, a page should appear containing a picture of John Glenn in a Mercury capsule.</p> 
+ <p>After Step 4, a page should appear containing a picture of a (much older) John Glenn aboard the space shuttle.</p> 
+ <h2>Links</h2> 
+ <p><a href="img-reload.html">img-reload.html</a><br> <a href="bar_master.jpg">bar_master.jpg</a><br> <a href="foo_master.jpg">foo_master.jpg</a></p> 
+ <hr class="hide"> 
+</div>

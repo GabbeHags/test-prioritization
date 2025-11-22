@@ -1,0 +1,24 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for Drag &amp; Drop</a> &gt; <strong>Test Case Description for dragging items from the Bookmark Manager</strong></p> 
+ <h1>Test Case Description for <em>dragging items from the Bookmark Manager</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Determine whether the application and OS properly handle items dragged from the Bookmark Manager</p> 
+ <h2>Steps/Description</h2> 
+ <p>Replace your browser's bookmarks file with the <code class="filename"><a href="bookmarks.html">bookmarks.html</a></code> file.</p> 
+ <ol> 
+  <li>Drag the <code>Sample/FTP:URLs</code> folder to your desktop</li> 
+  <li>Drag the <code>FTP: Netscape</code> bookmark to your desktop.</li> 
+  <li>Open the Personal Toolbar Folder, as well as its enclosed Channels folder</li> 
+  <li>Perform a drag-select beginning with <q>Personal Toolbar Folder</q>, and ending with <q>Computing and Internet</q></li> 
+  <li>Drag these files to your desktop</li> 
+  <li>Drag the @vantage bookmark onto invalid or inappropriate OS interface objects, e.g. Network Neighborhood (win32), or a Desktop Printer (Mac OS).</li> 
+  <li>Drag the <q>Business and Finance</q> folder to the Trash (or on Windows, to the Recycle Bin)</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>1. The <code>Sample/FTP:URLs</code> folder should appear on your desktop (containing the bookmarks). The file name should be converted to properly handle the lack of slashes within file names on Windows, and colons on Mac OS.</p> 
+ <p>2. The <code>FTP: Netscape</code> bookmark should appear on your desktop (on Mac OS, also with a file name converted to properly handle the lack of colons within file names.)</p> 
+ <p>5. All dragged files should appear on the desktop, with the same hierarchy that existed within the Bookmarks window.</p> 
+ <p>6. All inappropriate icons should reject the drag.</p> 
+ <p>7. The <q>Business and Finance</q> folder should no longer exist within Bookmark Manager, and be deleted.</p> 
+ <hr class="hide"> 
+</div>

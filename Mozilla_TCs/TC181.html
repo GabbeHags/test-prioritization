@@ -1,0 +1,22 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Search</a> &gt; <strong>Test Case Description for sidebar-bookmark-search</strong></p> 
+ <h1>Test Case Description for <em>sidebar-bookmark-search</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that a user can change the search engine used to conduct searches.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>Open a new browser window.</li> 
+  <li>All prefs should be set to their defaults (new profile).</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <ol> 
+  <li>Run the <a href="../search/sidebar-single-search.html">single-search</a> test first.</li> 
+  <li>Click the "Bookmark this Search" button below the search results.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <ol> 
+  <li>A new bookmark folder titled "Search:(your query string here)". Should appear in the <a href="index.html#4standard">4 Standard locations</a>.</li> 
+  <li>The "Bookmark this Search" button should not have become active until search results were generated.</li> 
+ </ol> 
+ <hr class="hide"> 
+</div>

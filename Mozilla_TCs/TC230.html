@@ -1,0 +1,48 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href="../">Test Case Matrix for cross-platform navigator features</a> &gt; <strong>Test Case Description for URL in a new browser window</strong></p> 
+ <h1>Test Case Description for <em>URL in a new browser window</em></h1> 
+ <h2>Purpose</h2> 
+ <p>Test opening a web location (URL) in a new Navigator window. Includes test to dismiss dialog.</p> 
+ <h2>Initial Conditions</h2> 
+ <p>The Open Web Location dialog should already be opened in the browser.</p> 
+ <table class="data"> 
+  <tbody>
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>In the textfield enter the URL <kbd>http://www.mozillazine.org/</kbd>.</li> 
+      <li>Select <b>New Navigator window</b> from the droplist, if it isn't already displayed there.</li> 
+      <li>Click the <b>Open</b> button (or hit <kbd>Enter</kbd>).</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td> 
+     <ol> 
+      <li>The dialog should go away.</li> 
+      <li>Another browser window should appear.</li> 
+      <li>The URL should load into the new browser window.</li> 
+     </ol> </td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <table class="data"> 
+  <tbody>
+   <tr> 
+    <th>Steps/Description</th> 
+    <td> 
+     <ol> 
+      <li>In the textfield enter the URL <kbd>http://www.mozillazine.org/</kbd>.</li> 
+      <li>Select <b>New Navigator window</b> from the droplist, if it isn't already displayed there.</li> 
+      <li>Click the <b>Cancel</b> button (or hit <kbd>Esc</kbd>).</li> 
+     </ol> </td> 
+   </tr> 
+   <tr> 
+    <th>Expected Results</th> 
+    <td>The dialog should go away and the page in the current browser window remain <em>unchanged</em>.</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <hr class="hide"> 
+</div>

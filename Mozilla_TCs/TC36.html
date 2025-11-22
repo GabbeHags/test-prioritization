@@ -1,0 +1,33 @@
+<div id="mainContent"> 
+ <p class="crumbs"><em>You are here:</em> <a href=".">Test Case Matrix for Bookmarks</a> &gt; <strong>Test Case Description for delete-bookmark</strong></p> 
+ <h1>Test Case Description for <em>delete-bookmark</em></h1> 
+ <h2>Purpose</h2> 
+ <p>This basic testcase is designed to verify that a bookmark is properly deleted and is no longer displayed at the appropriate places.</p> 
+ <h2>Initial Conditions</h2> 
+ <ul> 
+  <li>You must have a bookmarks file.</li> 
+  <li>To promote consistency, you may choose to use the default set of <a href="default-bookmarks.html">Netscape Seamonkey Bookmarks</a>.</li> 
+  <li>You also have the option to use this <a href="large-bookmarks.html">very large bookmarks file</a>.</li> 
+  <li>You must also <a href="javascript:sidebar.addPanel('Bookmarks', 'chrome://bookmarks/content/bm-panel.xul', '');"> customize</a> your sidebar to include a bookmarks panel.</li> 
+ </ul> 
+ <h2>Steps/Description</h2> 
+ <p>Select the toplevel 'Bookmarks' menu then select the 'Manage Bookmarks' menuitem.</p> 
+ <ol> 
+  <li>Select (highlight) a bookmark, press the delete key, OR</li> 
+  <li>Select (highlight) a bookmark, Select Edit|Delete. Click OK in the dialog that appears.</li> 
+ </ol> 
+ <h2>Expected Results</h2> 
+ <p>The title of and link to the bookmark should now be removed from:</p> 
+ <ul> 
+  <li>the toplevel 'Bookmarks' menu</li> 
+  <li>the 'Bookmarks' popup menu on the personal toolbar</li> 
+  <li>the 'Bookmarks' panel in MySidebar</li> 
+  <li>in the Manage Bookmarks view (select Bookmarks| Manage Bookmarks)</li> 
+ </ul> 
+ <h2>Link(s)</h2> 
+ <ul> 
+  <li><a href="default-bookmarks.html">default-bookmarks.html</a></li> 
+  <li><a href="large-bookmarks.html">large-bookmarks.html</a></li> 
+ </ul> 
+ <hr class="hide"> 
+</div>
