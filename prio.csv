@@ -1,0 +1,230 @@
+0,TC152,Viewpoint player plugin
+1,TC57,copy-from-dialog
+2,TC187,disjoint-select-table
+3,TC222,basic UI & dismissal
+4,TC154,testing Windows Media player plugin
+5,TC63,dragging invalid items from the desktop
+6,TC189,drag-scroll-text
+7,TC153,testing Acrobat plugin
+8,TC223,nonexistent local file
+9,TC190,drag-select-text
+10,TC126,image stress gif
+11,TC188,double-click-text
+12,TC17,using classic theme
+13,TC118,multiple, differing animated images
+14,TC129,lifecycle of applets
+15,TC218,adding folder to personal toolbar
+16,TC156,testing Shockwave plugin
+17,TC55,copy-bad-stuff
+18,TC112,print image
+19,TC221,opening web location dialog
+20,TC28,add-bookmark
+21,TC155,testing Quicktime Plugin
+22,TC62,dragging URL to an AIM window
+23,TC67,dragging items from the Bookmark Manager
+24,TC119,animated image stability
+25,TC158,printing XML test page
+26,TC193,adding a panel
+27,TC181,sidebar-bookmark-search
+28,TC123,image loading (local)
+29,TC195,Default Panels
+30,TC194,cursor icon
+31,TC64,dragging a large image (stress)
+32,TC191,shift-select-text
+33,TC97,anchor history
+34,TC157,testing sound file plugin
+35,TC120,image [dithering][3]
+36,TC121,gif87a format images
+37,TC65,dragging a folder from the desktop
+38,TC8,troubleshooting help about "can't see anyone in buddy list"
+39,TC128,X Bitmap (XBM) format images
+40,TC132,Disable after saved password (preferences)
+41,TC74,dragging from the Find File window
+42,TC125,image reloading (upon image change)
+43,TC85,Form Manager *after entering data into form manager*
+44,TC56,copy-complex-page
+45,TC192,triple-click-text
+46,TC51,surf-all-bookmarks
+47,TC61,copy-text-indented
+48,TC66,dragging into a frame-set page
+49,TC110,surf golinks
+50,TC26,accessing themes
+51,TC77,dragging items to the Bookmark Manager
+52,TC81,dragging shortcuts from the desktop
+53,TC59,copy-large-img
+54,TC130,applets with Liveconnect
+55,TC12,About Netscape
+56,TC204,bookmarks links
+57,TC173,page setup (Mac only)
+58,TC184,testing url-clean-search
+59,TC84,Form Manager *Pop-up*
+60,TC164,header/footer printing
+61,TC216,What's Related lists
+62,TC196,default width
+63,TC161,CSS2 page printing
+64,TC50,sort-columns
+65,TC60,copy-large-text
+66,TC4,"New to the net" tutorial help content
+67,TC15,Shortcuts
+68,TC207,customizing panels
+69,TC208,adding panel using javascript
+70,TC224,local file in current browser
+71,TC23,verifying items under "Apply theme" (a)
+72,TC75,dragging onto the application icon
+73,TC76,dragging content to a dialog
+74,TC200,mouse over panels
+75,TC68,dragging images across browser windows
+76,TC70,dragging image files from the desktop
+77,TC213,listing available remote panels
+78,TC30,copy-paste-items
+79,TC100,clear history
+80,TC206,verifying that nothing changes when you cancel
+81,TC73,dragging into an editor window
+82,TC176,print preview
+83,TC133,multiple passwords
+84,TC219,navigation toolbar buttons functionality
+85,TC89,Form Manager *prefill form data - choose*
+86,TC71,dragging from manage bookmarks menu to personal toolbar
+87,TC109,sort columns
+88,TC209,listing available local panels
+89,TC197,deleting all panels
+90,TC58,copy-img
+91,TC220,collapsing or expanding a toolbar
+92,TC72,dragging a helper-application file from the desktop
+93,TC86,cancel after deleting data from form manager
+94,TC228,URL in current browser window
+95,TC78,dragging a text file from the desktop
+96,TC177,printing range
+97,TC7,Security Center help content
+98,TC182,sidebar-change-engine
+99,TC141,remove all never saved passwords
+100,TC69,dragging an image onto the desktop
+101,TC2,forward and back items in Help
+102,TC212,previewing panels before addition
+103,TC199,maximum width
+104,TC203,non-default width
+105,TC10,Netscape Technical Support help content
+106,TC99,change group
+107,TC172,offline printing
+108,TC159,printing pages with alignment
+109,TC98,button-dropdown
+110,TC103,go menu list
+111,TC43,reorder-hierarchy
+112,TC185,testing url-do-search
+113,TC178,portrait and landscape settings
+114,TC201,open/close of sidebar
+115,TC215,unselecting panel
+116,TC14,Feedback Center
+117,TC3,International Users
+118,TC104,new session
+119,TC139,view saved password (pref)
+120,TC167,printing images
+121,TC106,record after redirect
+122,TC160,character style printing
+123,TC27,using modern theme (visual inspection)
+124,TC137,password dialog, never for this site
+125,TC47,self-drop
+126,TC107,resize columns
+127,TC101,delete link
+128,TC16,show/hide toolbar in Help
+129,TC11,toolbar in Help
+130,TC202,reading a panel
+131,TC211,panel title
+132,TC31,create-bookmark
+133,TC29,add-delete-ptoolbar-bookmark
+134,TC5,non-clickable items in Help
+135,TC13,drag receipt in Help
+136,TC45,resize-columns
+137,TC186,url-open-sidebar
+138,TC165,HTML 4.0 page printing
+139,TC108, show hide columns
+140,TC49,show-hide-folder
+141,TC111,surf history
+142,TC48,show-hide-columns
+143,TC52,surf-bookmark
+144,TC82,dragging the proxy icon
+145,TC34,custom-keywords
+146,TC18,using classic theme (visual inspection)
+147,TC40,file-bookmark
+148,TC38,delete-multiple-bookmarks
+149,TC205,bookmarks manager
+150,TC46,save-state
+151,TC53,view-bookmarks
+152,TC214,reordering panels
+153,TC183,sidebar-single-search
+154,TC80,dragging URLs onto the desktop
+155,TC90,Form Manager *prefill form data - cancel*
+156,TC54,view-properties
+157,TC174,printing page source
+158,TC39,edit-properties
+159,TC127,automatic web cam refresh
+160,TC92,Form Manager *save form data - edit*
+161,TC42,rename-bookmark
+162,TC33,create-folder
+163,TC210,order and panel list saving
+164,TC170,printing lists
+165,TC19,verifying theme items functionality (1)
+166,TC148,view never saved password through preferences
+167,TC169,printing large pages
+168,TC217,What's Related links
+169,TC142,remove all saved passwords
+170,TC37,delete-folder
+171,TC41,paste-into-folder
+172,TC93,Form Manager *save form data - never*
+173,TC113,image resize to original size
+174,TC171,Mozillazine result page printing
+175,TC44,reorder-item
+176,TC179,*table printing*.
+177,TC198,deleting a panel
+178,TC227,nonexistent URL
+179,TC180,printing web pages
+180,TC115,image resize
+181,TC32,create-delete-separator
+182,TC35,cut-undo-redo-items
+183,TC131,applets within html tags
+184,TC105,record links
+185,TC20,verifying theme items functionality (2)
+186,TC83,dragging the proxy icon
+187,TC140,remove all never saved passwords (pref)
+188,TC163,printing frames
+189,TC116,save image
+190,TC151,view saved passwords (Task)
+191,TC124,image loading (networked)
+192,TC135,password manager disable (preferences)
+193,TC143,remove all saved passwords (prefs)
+194,TC36,delete-bookmark
+195,TC94,Form Manager *save form data - no*
+196,TC229,URL in an editor window
+197,TC122,gif89a format images
+198,TC166,printing HTML widgets
+199,TC102,delete multiple links
+200,TC96,Form Manager *save form data - never return*
+201,TC225,local file in editor window
+202,TC162,printing pages in different formats
+203,TC79,dragging URLs across browser windows
+204,TC117,wallpaper image
+205,TC134,multiple usernames
+206,TC149,view never saved password (task)
+207,TC147,remove saved password (task)
+208,TC145,remove all saved passwords (prefs)
+209,TC87,deleting data from the form manager
+210,TC146,remove saved password preferences
+211,TC136,password enable through preferences
+212,TC226,local file in new browser
+213,TC24,using modern theme
+214,TC9,troubleshooting help "if you cannot sign on"
+215,TC230,URL in a new browser window
+216,TC22,verifying theme items functionality (4)
+217,TC168,printing pages with indentation
+218,TC114,image resize after resized window
+219,TC21,verifying theme items functionality (3)
+220,TC95,Form Manager *save form data - yes*
+221,TC88,Form Manager *entering data into form manager*
+222,TC25,using modern theme (visual inspection)
+223,TC1,arrow up and arrow down keys in Help
+224,TC6,PageUp/PageDn keys in Help
+225,TC138,password dialog-no
+226,TC91,Form Manager *prefill form data - ok*
+227,TC175,paragraph style printing
+228,TC150,view saved password
+229,TC144,remove never saved password (pref)

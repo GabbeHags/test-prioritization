@@ -50,6 +50,64 @@ fn write_distances_to_csv<P: AsRef<Path>>(
 
     Ok(())
 }
+fn write_prio_list_to_csv<P: AsRef<Path>>(
+    csv_path: P,
+    prio_list: &[PathBuf],
+) -> anyhow::Result<()> {
+    let csv_path = csv_path.as_ref();
+    anyhow::ensure!(
+        csv_path.exists()
+            || csv_path
+                .parent()
+                .context("Could not find directory of csv path")?
+                .is_dir(),
+        "The given csv path is not valid. Path {}",
+        csv_path.display()
+    );
+
+    let mut csv_file_writer = BufWriter::new(
+        File::options()
+            .write(true)
+            .create(true)
+            .truncate(true)
+            .open(csv_path)
+            .context("Could not create or open csv file")?,
+    );
+
+    for line in prio_list.iter().enumerate().map(|(rank, path)| {
+        let tc_id = path.file_stem().unwrap().display();
+        let test_text_content = get_test_case_file_text_content(path).unwrap();
+        let mut test_description = String::new();
+        for l in test_text_content.lines() {
+            let start_pat = "# Test Case for ";
+            if let Some(start) = l.find(start_pat) {
+                test_description = l[start_pat.len() + start..].trim().to_string();
+                break;
+            }
+            let start_pat = "# Testcase for ";
+            if let Some(start) = l.find(start_pat) {
+                test_description = l[start_pat.len() + start..].trim().to_string();
+                break;
+            }
+            let start_pat = "# Test Case Description for ";
+            if let Some(start) = l.find(start_pat) {
+                test_description = l[start_pat.len() + start..].trim().to_string();
+                break;
+            }
+        }
+        let trim_char = '*';
+        if test_description.starts_with(trim_char) && test_description.ends_with(trim_char) {
+            test_description = test_description.trim_matches(trim_char).to_string();
+        }
+        format!("{},{},{}\n", rank, tc_id, test_description)
+    }) {
+        csv_file_writer
+            .write_all(line.as_bytes())
+            .context("Could not write to csv file")?;
+    }
+
+    Ok(())
+}
 
 fn calculate_distances<P: AsRef<Path>>(
     files: &[P],
@@ -162,6 +220,7 @@ fn prioritize_distances(
 
 fn main() -> anyhow::Result<()> {
     const DISTANCE_CSV_PATH: &str = "./distance.csv";
+    const PRIO_CSV_PATH: &str = "./prio.csv";
     const TEST_CASE_FOLDER: &str = "Mozilla_TCs";
 
     let now = Instant::now();
@@ -176,7 +235,9 @@ fn main() -> anyhow::Result<()> {
 
     write_distances_to_csv(DISTANCE_CSV_PATH, &distances)?;
 
-    prioritize_distances(&distances)?;
+    let prio_list = prioritize_distances(&distances)?;
+
+    write_prio_list_to_csv(PRIO_CSV_PATH, &prio_list)?;
 
     Ok(())
 }
