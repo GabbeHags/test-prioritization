@@ -113,7 +113,7 @@ fn calculate_distances<P: AsRef<Path>>(
     files: &[P],
 ) -> anyhow::Result<IndexMap<(PathBuf, PathBuf), f32, foldhash::fast::RandomState>> {
     let now = Instant::now();
-    let file_combos = get_file_combinations(&files)?;
+    let file_combos = get_file_combinations(files)?;
     let elapsed_time = now.elapsed();
     println!("get_file_combinations took: {}", elapsed_time.as_secs_f32());
 
