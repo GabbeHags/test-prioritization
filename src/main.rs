@@ -120,23 +120,11 @@ fn prioritize_distances(
     loop {
         for ((p1, p2), d) in distances {
             match (min_dist_tmp_map.get(p1), min_dist_tmp_map.get(p2)) {
-                (Some(Some(_)), Some(Some(_))) => continue,
-                (None, None) => continue,
-                (Some(None), Some(None)) => continue,
                 (None, Some(None)) => min_dist_tmp_map.insert(p1.to_path_buf(), Some(*d)),
                 (Some(None), None) => min_dist_tmp_map.insert(p2.to_path_buf(), Some(*d)),
-                (Some(None), Some(Some(d2))) => {
-                    min_dist_tmp_map.insert(p2.to_path_buf(), Some(d2.min(*d)))
-                }
-                (Some(Some(d2)), Some(None)) => {
-                    min_dist_tmp_map.insert(p1.to_path_buf(), Some(d2.min(*d)))
-                }
-                (None, Some(Some(d2))) => {
-                    min_dist_tmp_map.insert(p2.to_path_buf(), Some(d2.min(*d)))
-                }
-                (Some(Some(d2)), None) => {
-                    min_dist_tmp_map.insert(p1.to_path_buf(), Some(d2.min(*d)))
-                }
+                (_, Some(Some(d2))) => min_dist_tmp_map.insert(p2.to_path_buf(), Some(d2.min(*d))),
+                (Some(Some(d2)), _) => min_dist_tmp_map.insert(p1.to_path_buf(), Some(d2.min(*d))),
+                _ => continue,
             };
         }
 
