@@ -23,8 +23,8 @@
 22,TC62,dragging URL to an AIM window
 23,TC67,dragging items from the Bookmark Manager
 24,TC119,animated image stability
-25,TC158,printing XML test page
-26,TC193,adding a panel
+25,TC193,adding a panel
+26,TC158,printing XML test page
 27,TC181,sidebar-bookmark-search
 28,TC123,image loading (local)
 29,TC195,Default Panels
@@ -162,9 +162,9 @@
 161,TC42,rename-bookmark
 162,TC33,create-folder
 163,TC210,order and panel list saving
-164,TC170,printing lists
-165,TC19,verifying theme items functionality (1)
-166,TC148,view never saved password through preferences
+164,TC19,verifying theme items functionality (1)
+165,TC148,view never saved password through preferences
+166,TC170,printing lists
 167,TC169,printing large pages
 168,TC217,What's Related links
 169,TC142,remove all saved passwords
@@ -221,8 +221,8 @@
 220,TC95,Form Manager *save form data - yes*
 221,TC88,Form Manager *entering data into form manager*
 222,TC25,using modern theme (visual inspection)
-223,TC1,arrow up and arrow down keys in Help
-224,TC6,PageUp/PageDn keys in Help
+223,TC6,PageUp/PageDn keys in Help
+224,TC1,arrow up and arrow down keys in Help
 225,TC138,password dialog-no
 226,TC91,Form Manager *prefill form data - ok*
 227,TC175,paragraph style printing
