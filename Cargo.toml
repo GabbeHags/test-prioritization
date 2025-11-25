@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
 foldhash = "0.2"
 html2text = "0.16"
 indexmap = "2.12.1"
