@@ -1,4 +1,7 @@
+mod cli;
+
 mod jaccard;
+
 use std::{
     collections::HashMap,
     fs::File,
@@ -8,6 +11,7 @@ use std::{
 };
 
 use anyhow::Context;
+use clap::Parser;
 use foldhash::HashMapExt;
 
 use indexmap::IndexMap;
@@ -219,12 +223,10 @@ fn prioritize_distances(
 }
 
 fn main() -> anyhow::Result<()> {
-    const DISTANCE_CSV_PATH: &str = "./distance.csv";
-    const PRIO_CSV_PATH: &str = "./prio.csv";
-    const TEST_CASE_FOLDER: &str = "Mozilla_TCs";
+    let cli = cli::Cli::parse();
 
     let now = Instant::now();
-    let paths = get_file_paths_from_dir(TEST_CASE_FOLDER)?;
+    let paths = get_file_paths_from_dir(&cli.test_case_folder)?;
     let elapsed_time = now.elapsed();
     println!(
         "get_file_paths_from_dir took: {}",
@@ -233,11 +235,11 @@ fn main() -> anyhow::Result<()> {
 
     let distances = calculate_distances(&paths)?;
 
-    write_distances_to_csv(DISTANCE_CSV_PATH, &distances)?;
+    write_distances_to_csv(&cli.distance_csv_output_path, &distances)?;
 
     let prio_list = prioritize_distances(&distances)?;
 
-    write_prio_list_to_csv(PRIO_CSV_PATH, &prio_list)?;
+    write_prio_list_to_csv(&cli.prio_csv_output_path, &prio_list)?;
 
     Ok(())
 }
